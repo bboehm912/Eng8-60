@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123a24">
+  <title>English 8 | Beginnings in Literature, Research, and Composition: Chapter 8</title>
+  <style>
+    :root{--green:#15803d;--dark:#123a24;--light:#f0fdf4;--ink:#172b20;--muted:#52645a;--bg:#f8fafc}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif}
+    button,input,textarea,select{font:inherit}
+    button{cursor:pointer}
+    :focus-visible{outline:3px solid #d99054;outline-offset:3px}
+    .shell{min-height:100vh;display:grid;grid-template-columns:220px minmax(0,1fr)}
+    aside{background:var(--dark);color:#e7eee1;padding:30px 22px;display:flex;flex-direction:column;gap:28px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand-icon{display:grid;place-items:center;width:39px;height:39px;border:1px solid #839789;border-radius:50%;font:17px Georgia;color:#d8e8a4}
+    .brand strong,.brand small{display:block}
+    .brand strong{font-size:11px;text-transform:uppercase;letter-spacing:.14em}
+    .brand small{font-size:10px;color:#a7b9a9;margin-top:5px}
+    .side-label,.kicker{font-size:10px;letter-spacing:.15em;font-weight:700;text-transform:uppercase}
+    .side-label{color:#a7b9a9}
+    .side-nav{display:grid;gap:8px}
+    .side-nav a{color:#d6e5d7;font-size:12px;line-height:1.4;text-decoration:none;padding:8px 10px;border-radius:6px}
+    .side-nav a:hover{background:#304d38}
+    .side-footer{margin-top:auto;border-top:1px solid #405249;padding-top:20px;font-size:11px;color:#c7d4c8;line-height:1.5}
+    main{min-width:0}
+    .topbar{border-bottom:1px solid #d5ded8;padding:22px 5%;font-size:11px;letter-spacing:.05em;color:#526158}
+    .wrap{max-width:1120px;margin:auto;padding:22px 5% 55px}
+    .header{background:#fff;border-top:5px solid var(--green);border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.05);padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+    .identity{display:flex;gap:18px;align-items:center}
+    .identity h1{font:700 22px 'Segoe UI',sans-serif;margin:0 0 5px}
+    .identity p{font-size:13px;color:#475569;margin:0}
+    .school-logo{width:70px;height:70px;flex:none;display:grid;place-items:center}
+    .school-logo img{max-width:100%;max-height:100%;object-fit:contain}
+    .asset-placeholder{font-size:10px;line-height:1.3;text-align:center;color:#64748b}
+    .stamp{position:relative;width:110px;height:110px;flex:none;display:grid;place-items:center}
+    .stamp-photo{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;object-fit:cover}
+    .stamp-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+    .stamp.has-asset .asset-placeholder{position:absolute;bottom:-13px;background:#fff}
+    .stamp.has-both .asset-placeholder{display:none}
+    .panel{background:#fff;border-radius:12px;padding:clamp(22px,4vw,36px);box-shadow:0 4px 12px rgba(0,0,0,.05);margin-top:20px}
+    .hero{border-radius:10px;background:var(--dark);color:#f7fcf4;overflow:hidden;display:grid;grid-template-columns:1fr .75fr;min-height:300px;margin-top:20px}
+    .hero-copy{padding:clamp(28px,5vw,48px);align-self:center}
+    .hero h2{font:normal clamp(34px,5vw,56px)/1.05 Georgia,'Times New Roman',serif;letter-spacing:-.04em;margin:0 0 15px}
+    .hero h2 em{color:#d8e8a4}
+    .hero p{color:#d4e4d3;max-width:550px;font-size:14px;line-height:1.65}
+    .hero-art{min-height:240px;display:grid;place-items:center;padding:20px;background:radial-gradient(ellipse at 50% 70%,#27553a,#123a24 70%)}
+    .hero-art svg{width:min(100%,400px);height:auto}
+    .kicker{color:#678067;margin:0 0 13px}
+    h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:normal;letter-spacing:-.025em}
+    .panel>h2{font-size:clamp(26px,3.6vw,38px);line-height:1.1;margin:0 0 12px}
+    h3{font-size:22px;line-height:1.2;margin:0 0 10px}
+    p,li{line-height:1.65}
+    .intro{color:var(--muted);max-width:840px;font-size:14px}
+    .callout{background:var(--light);border-left:4px solid var(--green);padding:15px 18px;border-radius:6px;margin:18px 0}
+    .callout p:last-child{margin-bottom:0}
+    .slide-deck{border:1px solid #dce5dd;border-radius:12px;overflow:hidden;margin-top:16px}
+    .slide{display:none;padding:clamp(20px,4vw,34px);min-height:340px;background:#fff;border-top:5px solid var(--green)}
+    .slide.active{display:block}
+    .slide h3{font-size:clamp(24px,3vw,32px);margin-bottom:14px}
+    .slide ul,.slide ol{padding-left:22px;font-size:15px}
+    .slide li{margin:8px 0}
+    .bell{background:#123a24;color:#f7fcf4}
+    .bell h3{color:#d8e8a4}
+    .bell-prompt{font:normal clamp(20px,2.8vw,28px)/1.35 Georgia,serif;margin:12px 0 18px;padding:18px;background:#1c4d33;border-radius:10px;min-height:110px}
+    .bell .button{background:#d8e8a4;color:#123a24}
+    .timer{font:700 14px 'Segoe UI';color:#d8e8a4;margin-left:10px}
+    .cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+    .card{background:#f8fafc;border:1px solid #dce5dd;border-top:3px solid var(--green);border-radius:8px;padding:14px}
+    .card span{display:block;color:#678067;font-size:10px;font-weight:700;letter-spacing:.1em;margin-bottom:6px}
+    .card strong{display:block;font-family:Georgia,serif;font-size:17px;font-weight:normal;margin-bottom:5px}
+    .card p{font-size:12px;line-height:1.5;color:#4b5c51;margin:0}
+    .deck-nav{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:#f8fafc;border-top:1px solid #dce5dd}
+    .deck-nav span{font-size:12px;color:var(--muted)}
+    .field{margin:20px 0}
+    .field label,.field legend{display:block;font-weight:700;font-size:14px;margin-bottom:7px}
+    .field input[type="text"],.field textarea,.field select{width:100%;padding:10px;border:1px solid #b7c8ba;border-radius:6px;background:#fff;color:#172b20}
+    .field textarea{min-height:82px;resize:vertical;line-height:1.5}
+    .field fieldset{border:0;padding:0;margin:0}
+    .radio-list{display:grid;gap:9px}
+    .radio-option{display:flex;align-items:flex-start;gap:9px;font-weight:normal!important;margin:0!important;color:#37483d}
+    .radio-option input{margin-top:4px;accent-color:var(--green)}
+    .rating{display:flex;gap:9px;flex-wrap:wrap}
+    .rating label{display:flex;align-items:center;gap:5px;background:#f8fafc;border:1px solid #dce5dd;border-radius:6px;padding:9px 12px;font-weight:normal}
+    .help{font-size:12px;color:#647168;margin:6px 0 0}
+    .button{display:inline-block;background:var(--green);color:#fff;border:0;border-radius:6px;padding:12px 17px;font-size:13px;font-weight:700}
+    .button:hover{background:#166534}
+    a.button{text-decoration:none}
+    .button:disabled{opacity:.4;cursor:default}
+    .button.secondary{background:#fff;color:#166534;border:1px solid #90b69a}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .feedback{min-height:1.5em;margin:12px 0 0;font-size:14px;font-weight:600;color:#166534}
+    .feedback.error{color:#9a3412}
+    .privacy{font-size:12px;color:#52645a;background:#f8fafc;border:1px solid #dce5dd;border-radius:7px;padding:12px 14px}
+    [hidden]{display:none!important}
+    @media(max-width:850px){.shell{grid-template-columns:1fr}aside{padding:15px 20px;display:block}.side-nav,.side-footer{display:none}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:650px){.wrap{padding:16px 16px 40px}.header{padding:14px}.identity{gap:10px}.identity h1{font-size:18px}.identity p{font-size:11px}.school-logo{width:52px;height:52px}.stamp{width:75px;height:75px}.stamp-photo{width:42px;height:42px}.hero{grid-template-columns:1fr}.hero-art{min-height:200px}.cards{grid-template-columns:1fr}}
+    @media print{aside,.topbar,.actions,.deck-nav{display:none!important}.shell{display:block}.wrap{padding:0}.panel,.header,.hero{box-shadow:none}.slide{display:block!important;min-height:0;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside aria-label="Course information">
+      <div class="brand"><div class="brand-icon" aria-hidden="true">C</div><div><strong>Chisholm</strong><small>Literature classroom</small></div></div>
+      <div class="side-nav"><p class="side-label">English 8 &middot; Chapter 8</p><a href="#slides">A &nbsp; Slides &amp; Bellringer</a><a href="#resources">Resource &nbsp; Chapter 8 Reading</a><a href="#checkpoint">B &nbsp; Pre-Assessment</a></div>
+      <div class="side-footer">Grade 8 &middot; English<br>Beginnings in Literature, Research, and Composition</div>
+    </aside>
+    <main>
+      <div class="topbar">ENGLISH 8 &nbsp; / &nbsp; THE SWISS FAMILY ROBINSON &nbsp; / &nbsp; <strong>CHAPTER 8</strong></div>
+      <div class="wrap">
+        <!-- Put these branding files beside this HTML page in your repository. -->
+        <header class="header">
+          <div class="identity"><div class="school-logo" id="school-logo"><span class="asset-placeholder">School logo<br>not added</span></div><div><h1>English 8</h1><p>Beginnings in Literature, Research, and Composition</p></div></div>
+          <div class="stamp" id="instructor-stamp"><span class="asset-placeholder">Instructor photo<br>&amp; stamp not added</span></div>
+        </header>
+
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy"><p class="kicker" style="color:#d8e8a4">The Swiss Family Robinson &nbsp; / &nbsp; Johann David Wyss</p><h2 id="page-title">The Journey to the<br><em>Wonderful Trees</em></h2><p>Chapter 8, complete and unabridged edition. Start with a bellringer, review where the family has been, and set a purpose for reading.</p></div>
+          <div class="hero-art">
+            <svg viewBox="0 0 400 240" role="img" aria-labelledby="t-title">
+              <title id="t-title">Tall trees with a winding path</title>
+              <path d="M0 215 Q120 190 220 210 T400 200 V240 H0Z" fill="#1c4d33"/>
+              <path d="M150 240 Q190 190 215 150 T250 90" fill="none" stroke="#d7bd85" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+              <g fill="#7a5a36"><rect x="60" y="90" width="18" height="125"/><rect x="300" y="70" width="22" height="145"/><rect x="190" y="110" width="14" height="100"/></g>
+              <g fill="#3f8a57"><circle cx="69" cy="80" r="46"/><circle cx="311" cy="62" r="55"/><circle cx="197" cy="100" r="36"/></g>
+              <g fill="#5fb078" opacity=".8"><circle cx="50" cy="70" r="24"/><circle cx="330" cy="48" r="28"/></g>
+            </svg>
+          </div>
+        </section>
+
+        <section class="panel" id="slides" aria-labelledby="slides-h">
+          <p class="kicker">Section A</p>
+          <h2 id="slides-h">Slides</h2>
+          <p class="intro">Use the buttons or the left and right arrow keys.</p>
+          <div class="slide-deck">
+            <article class="slide bell active" aria-label="Slide 1: Bellringer">
+              <p class="kicker" style="color:#d8e8a4">Slide 1 &middot; Bellringer</p>
+              <h3>Write for 3 minutes</h3>
+              <div class="bell-prompt" id="bell-prompt" aria-live="polite"></div>
+              <button class="button" id="bell-new" type="button">New random prompt</button>
+              <button class="button" id="bell-timer-btn" type="button">Start 3-minute timer</button><span class="timer" id="bell-timer" aria-live="off">3:00</span>
+              <p style="font-size:12px;color:#a7b9a9;margin-top:16px">A new prompt appears each time this page loads.</p>
+            </article>
+            <article class="slide" aria-label="Slide 2: Learning goals">
+              <p class="kicker">Slide 2</p>
+              <h3>Today's goals</h3>
+              <ul>
+                <li>Recall the key events of Chapters 4&ndash;7 and where the family stands now.</li>
+                <li>Make a prediction about <em>&ldquo;The Journey to the Wonderful Trees.&rdquo;</em></li>
+                <li>Read for setting: how the place affects the family's choices.</li>
+                <li>Practice using context clues to work out unfamiliar words.</li>
+              </ul>
+            </article>
+            <article class="slide" aria-label="Slide 3: Story so far">
+              <p class="kicker">Slide 3</p>
+              <h3>The story so far (Chapters 4&ndash;7)</h3>
+              <div class="cards">
+                <div class="card"><span>CH. 4</span><strong>Need</strong><p>The family faces what they must do to survive.</p></div>
+                <div class="card"><span>CH. 5</span><strong>Resources</strong><p>They take stock of the materials they have.</p></div>
+                <div class="card"><span>CH. 6</span><strong>Teamwork</strong><p>Each member takes on a task.</p></div>
+                <div class="card"><span>CH. 7</span><strong>The bridge</strong><p>They solve the stream crossing, as in our Day 1 build.</p></div>
+              </div>
+              <p>Turn and talk: which problem has taught the family the most so far?</p>
+            </article>
+            <article class="slide" aria-label="Slide 4: Predict">
+              <p class="kicker">Slide 4</p>
+              <h3>Predict from the title</h3>
+              <ul>
+                <li>What does <strong>&ldquo;journey&rdquo;</strong> suggest about this chapter?</li>
+                <li>Why might trees be called <strong>&ldquo;wonderful&rdquo;</strong>? What might the family need from them?</li>
+                <li>Which of the family's strengths do you expect to matter most?</li>
+              </ul>
+              <div class="callout"><p>Write one prediction on paper. After reading, we will check it against the text.</p></div>
+            </article>
+            <article class="slide" aria-label="Slide 5: Reading focus">
+              <p class="kicker">Slide 5</p>
+              <h3>Reading focus: setting</h3>
+              <ol>
+                <li>Underline details that describe the land, plants and animals the family meets.</li>
+                <li>Note one decision the family makes <em>because of</em> where they are.</li>
+                <li>Mark any word you cannot define and use context clues: look at the words and sentences nearby.</li>
+                <li>Record one quotation you could use as evidence later.</li>
+              </ol>
+            </article>
+            <article class="slide" aria-label="Slide 6: Next step">
+              <p class="kicker">Slide 6</p>
+              <h3>Before you read</h3>
+              <p>Complete the short <strong>pre-assessment</strong> below. It is not graded. It shows what you already know so we can plan how to help.</p>
+              <p>Then open your book to Chapter 8, &ldquo;The Journey to the Wonderful Trees,&rdquo; on <strong>page 54</strong>.</p>
+            </article>
+            <div class="deck-nav">
+              <button class="button secondary" id="prev" type="button">&larr; Previous</button>
+              <span id="count">1 / 6</span>
+              <button class="button" id="next" type="button">Next &rarr;</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="resources" aria-labelledby="res-h">
+          <p class="kicker">Resource</p>
+          <h2 id="res-h">Chapter 8 Reading</h2>
+          <div class="callout">
+            <p><strong>The Swiss Family Robinson</strong> &mdash; read Chapter 8, &ldquo;The Journey to the Wonderful Trees.&rdquo;</p>
+            <p><strong>Chapter 8 begins on page 54.</strong></p>
+            <p><a class="button" href="https://www.google.com/books/edition/The_Swiss_Family_Robinson/cAlWJ9lCnFQC?hl=en&amp;gbpv=1" target="_blank" rel="noopener">Open in Google Books &rarr;</a></p>
+            <p class="help">Opens in a new tab. Turn to page 54, or use the chapter title to find your place.</p>
+          </div>
+        </section>
+
+        <section class="panel" id="checkpoint" aria-labelledby="check-h">
+          <p class="kicker">Section B</p>
+          <h2 id="check-h">Pre-Assessment Checkpoint</h2>
+          <p class="intro">Answer honestly. Wrong answers are fine here.</p>
+          <form id="check" novalidate>
+            <div class="field"><label for="name">Name</label><input type="text" id="name" autocomplete="off"></div>
+            <div class="field"><fieldset><legend>1. What is the main reason the family keeps moving to explore the island?</legend>
+              <div class="radio-list">
+                <label class="radio-option"><input type="radio" name="q1" value="a"> To find a safer, better place to settle and more resources</label>
+                <label class="radio-option"><input type="radio" name="q1" value="b"> To race another family</label>
+                <label class="radio-option"><input type="radio" name="q1" value="c"> Because they are bored</label>
+                <label class="radio-option"><input type="radio" name="q1" value="d"> I'm not sure</label>
+              </div></fieldset></div>
+            <div class="field"><fieldset><legend>2. Setting means&hellip;</legend>
+              <div class="radio-list">
+                <label class="radio-option"><input type="radio" name="q2" value="a"> the problem in a story</label>
+                <label class="radio-option"><input type="radio" name="q2" value="b"> when and where a story takes place</label>
+                <label class="radio-option"><input type="radio" name="q2" value="c"> the lesson of a story</label>
+                <label class="radio-option"><input type="radio" name="q2" value="d"> I'm not sure</label>
+              </div></fieldset></div>
+            <div class="field"><fieldset><legend>3. If you do not know a word, which strategy helps first?</legend>
+              <div class="radio-list">
+                <label class="radio-option"><input type="radio" name="q3" value="a"> Skip the whole page</label>
+                <label class="radio-option"><input type="radio" name="q3" value="b"> Use clues from the words and sentences nearby</label>
+                <label class="radio-option"><input type="radio" name="q3" value="c"> Guess without reading on</label>
+                <label class="radio-option"><input type="radio" name="q3" value="d"> I'm not sure</label>
+              </div></fieldset></div>
+            <div class="field"><label for="q4">4. Predict one thing that will happen in Chapter 8 and why you think so. (1&ndash;2 sentences)</label><textarea id="q4" maxlength="300"></textarea></div>
+            <div class="field"><label for="q5">5. How is the Robinsons' teamwork like or unlike your Day 1 bridge team? (1&ndash;2 sentences)</label><textarea id="q5" maxlength="300"></textarea></div>
+            <div class="field"><fieldset><legend>6. How confident are you at finding evidence in a text? (1 = not at all, 5 = very)</legend>
+              <div class="rating">
+                <label><input type="radio" name="q6" value="1"> 1</label><label><input type="radio" name="q6" value="2"> 2</label><label><input type="radio" name="q6" value="3"> 3</label><label><input type="radio" name="q6" value="4"> 4</label><label><input type="radio" name="q6" value="5"> 5</label>
+              </div></fieldset></div>
+            <div class="actions"><button class="button" type="submit">Finish checkpoint</button><button class="button secondary" type="reset" id="clear">Clear</button><button class="button secondary" type="button" id="print">Print</button></div>
+            <p class="feedback" id="feedback" role="status"></p>
+          </form>
+          <p class="privacy">This page does not save or send answers. To collect class responses, copy these questions into an approved Google or Microsoft Form.</p>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    (() => {
+      function loadBrandImage(containerId, filename, alt, className) {
+        const container = document.getElementById(containerId);
+        const image = new Image();
+        image.className = className;
+        image.alt = alt;
+        image.addEventListener('load', () => {
+          container.append(image);
+          container.classList.add('has-asset');
+          if (containerId === 'school-logo') container.querySelector('.asset-placeholder').hidden = true;
+          if (container.querySelector('.stamp-photo') && container.querySelector('.stamp-svg')) container.classList.add('has-both');
+        });
+        image.addEventListener('error', () => console.warn('Branding asset not found:', filename));
+        image.src = filename;
+      }
+      loadBrandImage('school-logo', 'chisholm_logo.png', 'Chisholm school logo', '');
+      loadBrandImage('instructor-stamp', 'boehm_photo.jpg', 'Instructor photo', 'stamp-photo');
+      loadBrandImage('instructor-stamp', 'boehm-stamp.svg', 'Classroom stamp', 'stamp-svg');
+
+      const prompts = [
+        'If you were stranded with your family, what is the first thing you would try to find or build, and why?',
+        'Describe a time a plan changed and you had to adapt. What did you do?',
+        'Which would help your group survive more: strength, creativity or patience? Defend your choice.',
+        'What makes a place feel safe? Describe the setting where you feel safest.',
+        'Which job would you take in a survival team, and what skill would you bring?',
+        'Describe the biggest tree or most amazing natural place you have seen. What made it memorable?',
+        'Why do people explore new places even when it is risky?',
+        'Think of our Day 1 bridge. What is one thing you would change about how your team worked?'
+      ];
+      const promptEl = document.getElementById('bell-prompt');
+      let last = -1;
+      function randomPrompt() {
+        let n;
+        do { n = Math.floor(Math.random() * prompts.length); } while (n === last && prompts.length > 1);
+        last = n;
+        promptEl.textContent = prompts[n];
+      }
+      randomPrompt();
+      document.getElementById('bell-new').addEventListener('click', randomPrompt);
+
+      const timerEl = document.getElementById('bell-timer');
+      const timerBtn = document.getElementById('bell-timer-btn');
+      let timerId = null;
+      timerBtn.addEventListener('click', () => {
+        clearInterval(timerId);
+        let left = 180;
+        timerEl.textContent = '3:00';
+        timerId = setInterval(() => {
+          left--;
+          timerEl.textContent = Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0');
+          if (left <= 0) { clearInterval(timerId); timerEl.textContent = 'Time!'; }
+        }, 1000);
+      });
+
+      const slides = Array.from(document.querySelectorAll('.slide'));
+      const prev = document.getElementById('prev'), next = document.getElementById('next'), count = document.getElementById('count');
+      let index = 0;
+      function show(n) {
+        index = Math.max(0, Math.min(slides.length - 1, n));
+        slides.forEach((s, i) => s.classList.toggle('active', i === index));
+        count.textContent = (index + 1) + ' / ' + slides.length;
+        prev.disabled = index === 0;
+        next.disabled = index === slides.length - 1;
+      }
+      prev.addEventListener('click', () => show(index - 1));
+      next.addEventListener('click', () => show(index + 1));
+      document.addEventListener('keydown', e => {
+        if (/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
+        if (e.key === 'ArrowRight') show(index + 1);
+        if (e.key === 'ArrowLeft') show(index - 1);
+      });
+      show(0);
+
+      const form = document.getElementById('check');
+      const feedback = document.getElementById('feedback');
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        const missing = ['q1', 'q2', 'q3', 'q6'].some(n => !form.querySelector('[name=' + n + ']:checked'));
+        const sentences = v => (v.match(/[.!?](\s|$)/g) || []).length;
+        if (missing || !form.q4.value.trim() || !form.q5.value.trim()) {
+          feedback.className = 'feedback error';
+          feedback.textContent = 'Please answer every question.';
+          return;
+        }
+        if (sentences(form.q4.value) > 2 || sentences(form.q5.value) > 2) {
+          feedback.className = 'feedback error';
+          feedback.textContent = 'Keep written answers to two sentences.';
+          return;
+        }
+        feedback.className = 'feedback';
+        feedback.textContent = 'Checkpoint complete. Thank you! Show this screen to your teacher.';
+      });
+      form.addEventListener('reset', () => { feedback.textContent = ''; });
+      document.getElementById('print').addEventListener('click', () => window.print());
+    })();
+  </script>
+</body>
+</html>
