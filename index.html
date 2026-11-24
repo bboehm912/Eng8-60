@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#123a24">
-  <title>English 8 | Beginnings in Literature, Research, and Composition: Chapter 8</title>
+  <title>English 11 | American Literature: A Raisin in the Sun</title>
   <style>
     :root{--green:#15803d;--dark:#123a24;--light:#f0fdf4;--ink:#172b20;--muted:#52645a;--bg:#f8fafc}
     *{box-sizing:border-box}
@@ -48,7 +48,7 @@
     .hero h2 em{color:#d8e8a4}
     .hero p{color:#d4e4d3;max-width:550px;font-size:14px;line-height:1.65}
     .hero-art{min-height:240px;display:grid;place-items:center;padding:20px;background:radial-gradient(ellipse at 50% 70%,#27553a,#123a24 70%)}
-    .hero-art svg{width:min(100%,400px);height:auto}
+    .hero-art svg{width:min(100%,380px);height:auto}
     .kicker{color:#678067;margin:0 0 13px}
     h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:normal;letter-spacing:-.025em}
     .panel>h2{font-size:clamp(26px,3.6vw,38px);line-height:1.1;margin:0 0 12px}
@@ -68,16 +68,23 @@
     .bell-prompt{font:normal clamp(20px,2.8vw,28px)/1.35 Georgia,serif;margin:12px 0 18px;padding:18px;background:#1c4d33;border-radius:10px;min-height:110px}
     .bell .button{background:#d8e8a4;color:#123a24}
     .timer{font:700 14px 'Segoe UI';color:#d8e8a4;margin-left:10px}
-    .cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+    .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
     .card{background:#f8fafc;border:1px solid #dce5dd;border-top:3px solid var(--green);border-radius:8px;padding:14px}
     .card span{display:block;color:#678067;font-size:10px;font-weight:700;letter-spacing:.1em;margin-bottom:6px}
     .card strong{display:block;font-family:Georgia,serif;font-size:17px;font-weight:normal;margin-bottom:5px}
     .card p{font-size:12px;line-height:1.5;color:#4b5c51;margin:0}
     .deck-nav{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:#f8fafc;border-top:1px solid #dce5dd}
     .deck-nav span{font-size:12px;color:var(--muted)}
+    .hub-group{margin-top:22px}
+    .hub-group h3{font-size:18px;color:#166534;border-bottom:1px solid #dce5dd;padding-bottom:6px}
+    .resource{display:flex;align-items:center;justify-content:space-between;gap:14px;background:#f8fafc;border:1px solid #dce5dd;border-radius:9px;padding:14px 16px;margin:10px 0}
+    .resource strong{display:block;font-family:Georgia,serif;font-weight:normal;font-size:17px}
+    .resource small{display:block;color:#647168;font-size:12px;line-height:1.5;margin-top:3px}
+    .tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#dcfce7;color:#166534;border-radius:99px;padding:2px 8px;margin-right:6px}
+    .tag.lend{background:#fef3c7;color:#92400e}
     .field{margin:20px 0}
     .field label,.field legend{display:block;font-weight:700;font-size:14px;margin-bottom:7px}
-    .field input[type="text"],.field textarea,.field select{width:100%;padding:10px;border:1px solid #b7c8ba;border-radius:6px;background:#fff;color:#172b20}
+    .field input[type="text"],.field textarea{width:100%;padding:10px;border:1px solid #b7c8ba;border-radius:6px;background:#fff;color:#172b20}
     .field textarea{min-height:82px;resize:vertical;line-height:1.5}
     .field fieldset{border:0;padding:0;margin:0}
     .radio-list{display:grid;gap:9px}
@@ -86,9 +93,8 @@
     .rating{display:flex;gap:9px;flex-wrap:wrap}
     .rating label{display:flex;align-items:center;gap:5px;background:#f8fafc;border:1px solid #dce5dd;border-radius:6px;padding:9px 12px;font-weight:normal}
     .help{font-size:12px;color:#647168;margin:6px 0 0}
-    .button{display:inline-block;background:var(--green);color:#fff;border:0;border-radius:6px;padding:12px 17px;font-size:13px;font-weight:700}
+    .button{display:inline-block;background:var(--green);color:#fff;border:0;border-radius:6px;padding:12px 17px;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap}
     .button:hover{background:#166534}
-    a.button{text-decoration:none}
     .button:disabled{opacity:.4;cursor:default}
     .button.secondary{background:#fff;color:#166534;border:1px solid #90b69a}
     .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
@@ -96,8 +102,8 @@
     .feedback.error{color:#9a3412}
     .privacy{font-size:12px;color:#52645a;background:#f8fafc;border:1px solid #dce5dd;border-radius:7px;padding:12px 14px}
     [hidden]{display:none!important}
-    @media(max-width:850px){.shell{grid-template-columns:1fr}aside{padding:15px 20px;display:block}.side-nav,.side-footer{display:none}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media(max-width:650px){.wrap{padding:16px 16px 40px}.header{padding:14px}.identity{gap:10px}.identity h1{font-size:18px}.identity p{font-size:11px}.school-logo{width:52px;height:52px}.stamp{width:75px;height:75px}.stamp-photo{width:42px;height:42px}.hero{grid-template-columns:1fr}.hero-art{min-height:200px}.cards{grid-template-columns:1fr}}
+    @media(max-width:850px){.shell{grid-template-columns:1fr}aside{padding:15px 20px;display:block}.side-nav,.side-footer{display:none}}
+    @media(max-width:650px){.wrap{padding:16px 16px 40px}.header{padding:14px}.identity{gap:10px}.identity h1{font-size:18px}.identity p{font-size:11px}.school-logo{width:52px;height:52px}.stamp{width:75px;height:75px}.stamp-photo{width:42px;height:42px}.hero{grid-template-columns:1fr}.hero-art{min-height:200px}.cards{grid-template-columns:1fr}.resource{flex-direction:column;align-items:flex-start}}
     @media print{aside,.topbar,.actions,.deck-nav{display:none!important}.shell{display:block}.wrap{padding:0}.panel,.header,.hero{box-shadow:none}.slide{display:block!important;min-height:0;break-inside:avoid}}
   </style>
 </head>
@@ -105,28 +111,29 @@
   <div class="shell">
     <aside aria-label="Course information">
       <div class="brand"><div class="brand-icon" aria-hidden="true">C</div><div><strong>Chisholm</strong><small>Literature classroom</small></div></div>
-      <div class="side-nav"><p class="side-label">English 8 &middot; Chapter 8</p><a href="#slides">A &nbsp; Slides &amp; Bellringer</a><a href="#resources">Resource &nbsp; Chapter 8 Reading</a><a href="#checkpoint">B &nbsp; Pre-Assessment</a></div>
-      <div class="side-footer">Grade 8 &middot; English<br>Beginnings in Literature, Research, and Composition</div>
+      <div class="side-nav"><p class="side-label">English 11 &middot; Raisin Unit</p><a href="#slides">A &nbsp; Slides &amp; Bellringer</a><a href="#hub">B &nbsp; Resource Hub</a><a href="#checkpoint">C &nbsp; Checkpoint</a></div>
+      <div class="side-footer">Grade 11 &middot; English<br>American Literature</div>
     </aside>
     <main>
-      <div class="topbar">ENGLISH 8 &nbsp; / &nbsp; THE SWISS FAMILY ROBINSON &nbsp; / &nbsp; <strong>CHAPTER 8</strong></div>
+      <div class="topbar">ENGLISH 11 &nbsp; / &nbsp; AMERICAN LITERATURE &nbsp; / &nbsp; <strong>A RAISIN IN THE SUN</strong></div>
       <div class="wrap">
         <!-- Put these branding files beside this HTML page in your repository. -->
         <header class="header">
-          <div class="identity"><div class="school-logo" id="school-logo"><span class="asset-placeholder">School logo<br>not added</span></div><div><h1>English 8</h1><p>Beginnings in Literature, Research, and Composition</p></div></div>
+          <div class="identity"><div class="school-logo" id="school-logo"><span class="asset-placeholder">School logo<br>not added</span></div><div><h1>English 11</h1><p>American Literature</p></div></div>
           <div class="stamp" id="instructor-stamp"><span class="asset-placeholder">Instructor photo<br>&amp; stamp not added</span></div>
         </header>
 
         <section class="hero" aria-labelledby="page-title">
-          <div class="hero-copy"><p class="kicker" style="color:#d8e8a4">The Swiss Family Robinson &nbsp; / &nbsp; Johann David Wyss</p><h2 id="page-title">The Journey to the<br><em>Wonderful Trees</em></h2><p>Chapter 8, complete and unabridged edition. Start with a bellringer, review where the family has been, and set a purpose for reading.</p></div>
+          <div class="hero-copy"><p class="kicker" style="color:#d8e8a4">Lorraine Hansberry &nbsp; / &nbsp; Voices of freedom</p><h2 id="page-title">A Raisin<br>in the <em>Sun</em></h2><p>Today we compare poems by Hughes, Angelou and Wheatley. Notice how each speaker talks about freedom, voice and belonging. Later in the unit these voices will connect to <em>A Raisin in the Sun</em>, which we have not started yet.</p></div>
           <div class="hero-art">
-            <svg viewBox="0 0 400 240" role="img" aria-labelledby="t-title">
-              <title id="t-title">Tall trees with a winding path</title>
-              <path d="M0 215 Q120 190 220 210 T400 200 V240 H0Z" fill="#1c4d33"/>
-              <path d="M150 240 Q190 190 215 150 T250 90" fill="none" stroke="#d7bd85" stroke-width="10" stroke-linecap="round" opacity=".7"/>
-              <g fill="#7a5a36"><rect x="60" y="90" width="18" height="125"/><rect x="300" y="70" width="22" height="145"/><rect x="190" y="110" width="14" height="100"/></g>
-              <g fill="#3f8a57"><circle cx="69" cy="80" r="46"/><circle cx="311" cy="62" r="55"/><circle cx="197" cy="100" r="36"/></g>
-              <g fill="#5fb078" opacity=".8"><circle cx="50" cy="70" r="24"/><circle cx="330" cy="48" r="28"/></g>
+            <svg viewBox="0 0 380 240" role="img" aria-labelledby="sun-title">
+              <title id="sun-title">A sun rising over a window and a small plant</title>
+              <circle cx="190" cy="120" r="70" fill="#d8e8a4" opacity=".9"/>
+              <g stroke="#d8e8a4" stroke-width="5" stroke-linecap="round" opacity=".7"><path d="M190 20v-14M190 234v-14M80 120H66M314 120h-14M112 42l-10-10M278 198l10 10M112 198l-10 10M278 42l10-10"/></g>
+              <rect x="120" y="150" width="140" height="90" fill="#123a24"/>
+              <rect x="150" y="190" width="80" height="50" fill="#a9703c"/>
+              <path d="M190 190v-48" stroke="#5fb078" stroke-width="5"/>
+              <path d="M190 160c-24-4-28-24-28-24s22-2 28 24zM190 150c24-4 28-24 28-24s-22-2-28 24z" fill="#5fb078"/>
             </svg>
           </div>
         </section>
@@ -138,58 +145,56 @@
           <div class="slide-deck">
             <article class="slide bell active" aria-label="Slide 1: Bellringer">
               <p class="kicker" style="color:#d8e8a4">Slide 1 &middot; Bellringer</p>
-              <h3>Write for 3 minutes</h3>
+              <h3>Write for 4 minutes</h3>
               <div class="bell-prompt" id="bell-prompt" aria-live="polite"></div>
               <button class="button" id="bell-new" type="button">New random prompt</button>
-              <button class="button" id="bell-timer-btn" type="button">Start 3-minute timer</button><span class="timer" id="bell-timer" aria-live="off">3:00</span>
+              <button class="button" id="bell-timer-btn" type="button">Start 4-minute timer</button><span class="timer" id="bell-timer" aria-live="off">4:00</span>
               <p style="font-size:12px;color:#a7b9a9;margin-top:16px">A new prompt appears each time this page loads.</p>
             </article>
-            <article class="slide" aria-label="Slide 2: Learning goals">
+            <article class="slide" aria-label="Slide 2: Goals">
               <p class="kicker">Slide 2</p>
               <h3>Today's goals</h3>
               <ul>
-                <li>Recall the key events of Chapters 4&ndash;7 and where the family stands now.</li>
-                <li>Make a prediction about <em>&ldquo;The Journey to the Wonderful Trees.&rdquo;</em></li>
-                <li>Read for setting: how the place affects the family's choices.</li>
-                <li>Practice using context clues to work out unfamiliar words.</li>
+                <li>Read four poems: &ldquo;The Weary Blues,&rdquo; &ldquo;Democracy,&rdquo; &ldquo;Caged Bird&rdquo; and &ldquo;On Being Brought from Africa to America.&rdquo;</li>
+                <li>Identify each speaker's attitude toward freedom, voice and belonging.</li>
+                <li>Compare two poems using evidence from the text.</li>
+                <li>Notice how craft (imagery, repetition, rhythm, tone) shapes meaning.</li>
               </ul>
             </article>
-            <article class="slide" aria-label="Slide 3: Story so far">
+            <article class="slide" aria-label="Slide 3: The poets">
               <p class="kicker">Slide 3</p>
-              <h3>The story so far (Chapters 4&ndash;7)</h3>
+              <h3>Meet the poets</h3>
               <div class="cards">
-                <div class="card"><span>CH. 4</span><strong>Need</strong><p>The family faces what they must do to survive.</p></div>
-                <div class="card"><span>CH. 5</span><strong>Resources</strong><p>They take stock of the materials they have.</p></div>
-                <div class="card"><span>CH. 6</span><strong>Teamwork</strong><p>Each member takes on a task.</p></div>
-                <div class="card"><span>CH. 7</span><strong>The bridge</strong><p>They solve the stream crossing, as in our Day 1 build.</p></div>
+                <div class="card"><span>LANGSTON HUGHES</span><strong>&ldquo;The Weary Blues,&rdquo; &ldquo;Democracy&rdquo;</strong><p>Poet of the Harlem Renaissance. Draws on jazz and blues rhythms and speaks plainly about equality.</p></div>
+                <div class="card"><span>MAYA ANGELOU</span><strong>&ldquo;Caged Bird&rdquo;</strong><p>Contrasts a free bird and a caged bird to explore freedom and hope.</p></div>
+                <div class="card"><span>PHILLIS WHEATLEY</span><strong>&ldquo;On Being Brought from Africa to America&rdquo;</strong><p>An enslaved poet in colonial America who published a book of poems in 1773.</p></div>
               </div>
-              <p>Turn and talk: which problem has taught the family the most so far?</p>
             </article>
-            <article class="slide" aria-label="Slide 4: Predict">
+            <article class="slide" aria-label="Slide 4: Reading a poem">
               <p class="kicker">Slide 4</p>
-              <h3>Predict from the title</h3>
-              <ul>
-                <li>What does <strong>&ldquo;journey&rdquo;</strong> suggest about this chapter?</li>
-                <li>Why might trees be called <strong>&ldquo;wonderful&rdquo;</strong>? What might the family need from them?</li>
-                <li>Which of the family's strengths do you expect to matter most?</li>
-              </ul>
-              <div class="callout"><p>Write one prediction on paper. After reading, we will check it against the text.</p></div>
-            </article>
-            <article class="slide" aria-label="Slide 5: Reading focus">
-              <p class="kicker">Slide 5</p>
-              <h3>Reading focus: setting</h3>
+              <h3>Read each poem three ways</h3>
               <ol>
-                <li>Underline details that describe the land, plants and animals the family meets.</li>
-                <li>Note one decision the family makes <em>because of</em> where they are.</li>
-                <li>Mark any word you cannot define and use context clues: look at the words and sentences nearby.</li>
-                <li>Record one quotation you could use as evidence later.</li>
+                <li><strong>Listen:</strong> read it aloud. Where does the rhythm speed up or slow down?</li>
+                <li><strong>Picture:</strong> what images or comparisons stand out?</li>
+                <li><strong>Decide:</strong> who is speaking, and how do they feel about freedom?</li>
               </ol>
+              <p>Question for today: what does freedom sound like in each poem?</p>
             </article>
-            <article class="slide" aria-label="Slide 6: Next step">
+            <article class="slide" aria-label="Slide 5: Comparing poems">
+              <p class="kicker">Slide 5</p>
+              <h3>How to compare two poems</h3>
+              <ol>
+                <li><strong>Topic:</strong> what do both poems talk about?</li>
+                <li><strong>Difference:</strong> how do the speakers' tone or attitude differ?</li>
+                <li><strong>Evidence:</strong> pick a short quotation from each poem.</li>
+                <li><strong>Craft:</strong> name one technique each poet uses.</li>
+              </ol>
+              <div class="callout"><p>Sentence starter: &ldquo;Both poems show ___, but [Poet A] uses ___ while [Poet B] uses ___.&rdquo;</p></div>
+            </article>
+            <article class="slide" aria-label="Slide 6: Next">
               <p class="kicker">Slide 6</p>
-              <h3>Before you read</h3>
-              <p>Complete the short <strong>pre-assessment</strong> below. It is not graded. It shows what you already know so we can plan how to help.</p>
-              <p>Then open your book to Chapter 8, &ldquo;The Journey to the Wonderful Trees,&rdquo; on <strong>page 54</strong>.</p>
+              <h3>Your next steps</h3>
+              <p>Open the <strong>Resource Hub</strong> to read today's four poems, then finish the <strong>checkpoint</strong>. We will start <em>A Raisin in the Sun</em> later in the unit.</p>
             </article>
             <div class="deck-nav">
               <button class="button secondary" id="prev" type="button">&larr; Previous</button>
@@ -199,51 +204,70 @@
           </div>
         </section>
 
-        <section class="panel" id="resources" aria-labelledby="res-h">
-          <p class="kicker">Resource</p>
-          <h2 id="res-h">Chapter 8 Reading</h2>
-          <div class="callout">
-            <p><strong>The Swiss Family Robinson</strong> &mdash; read Chapter 8, &ldquo;The Journey to the Wonderful Trees.&rdquo;</p>
-            <p><strong>Chapter 8 begins on page 54.</strong></p>
-            <p><a class="button" href="https://www.google.com/books/edition/The_Swiss_Family_Robinson/cAlWJ9lCnFQC?hl=en&amp;gbpv=1" target="_blank" rel="noopener">Open in Google Books &rarr;</a></p>
-            <p class="help">Opens in a new tab. Turn to page 54, or use the chapter title to find your place.</p>
+        <section class="panel" id="hub" aria-labelledby="hub-h">
+          <p class="kicker">Section B</p>
+          <h2 id="hub-h">Resource Hub</h2>
+          <p class="intro">Every reading opens in a new tab. <strong>Today we read the four poems.</strong> The other readings are for later in the unit. <span class="tag">Open</span> = free to read online. <span class="tag lend">Library</span> = free digital library copy that may need a free Internet Archive account to borrow.</p>
+
+          <div class="hub-group">
+            <h3>Today: Poetry</h3>
+            <div class="resource"><div><strong>&ldquo;The Weary Blues&rdquo;</strong><small><span class="tag">Open</span>Langston Hughes &middot; Academy of American Poets</small></div><a class="button" href="https://www.poets.org/poem/weary-blues" target="_blank" rel="noopener">Read &rarr;</a></div>
+            <div class="resource"><div><strong>&ldquo;Democracy&rdquo;</strong><small><span class="tag">Open</span>Langston Hughes &middot; American Poems</small></div><a class="button" href="https://www.americanpoems.com/poets/langston-hughes/democracy/" target="_blank" rel="noopener">Read &rarr;</a></div>
+            <div class="resource"><div><strong>&ldquo;Caged Bird&rdquo;</strong><small><span class="tag">Open</span>Maya Angelou &middot; Poetry Foundation</small></div><a class="button" href="https://www.poetryfoundation.org/poems/48989/caged-bird" target="_blank" rel="noopener">Read &rarr;</a></div>
+            <div class="resource"><div><strong>&ldquo;On Being Brought from Africa to America&rdquo;</strong><small><span class="tag">Open</span>Phillis Wheatley &middot; Academy of American Poets</small></div><a class="button" href="https://www.poets.org/poem/being-brought-africa-america" target="_blank" rel="noopener">Read &rarr;</a></div>
           </div>
+
+          <div class="hub-group">
+            <h3>Coming up: main text</h3>
+            <div class="resource"><div><strong>A Raisin in the Sun</strong><small><span class="tag lend">Library</span>Lorraine Hansberry. We have not started this play yet. It is still under copyright, so it is linked as a library lending copy rather than a free download.</small></div><a class="button" href="https://archive.org/details/raisininsununfil00hans_0" target="_blank" rel="noopener">Open play &rarr;</a></div>
+          </div>
+
+          <div class="hub-group">
+            <h3>Coming up: speeches</h3>
+            <div class="resource"><div><strong>&ldquo;I Have a Dream&rdquo;</strong><small><span class="tag">Open</span>Martin Luther King Jr., 1963 &middot; Full transcript, NPR</small></div><a class="button" href="https://www.npr.org/2010/01/18/122701268/i-have-a-dream-speech-in-its-entirety" target="_blank" rel="noopener">Read &rarr;</a></div>
+            <div class="resource"><div><strong>Eulogy for Martin Luther King Jr.</strong><small><span class="tag">Open</span>Robert F. Kennedy, April 4, 1968 &middot; JFK Library</small></div><a class="button" href="https://www.jfklibrary.org/learn/about-jfk/the-kennedy-family/robert-f-kennedy/robert-f-kennedy-speeches/statement-on-assassination-of-martin-luther-king-jr-april-4-1968" target="_blank" rel="noopener">Read &rarr;</a></div>
+          </div>
+
+          <div class="hub-group">
+            <h3>Coming up: essays and nonfiction</h3>
+            <div class="resource"><div><strong>&ldquo;The Meanings of a Word&rdquo;</strong><small><span class="tag">Open</span>Gloria Naylor &middot; PDF</small></div><a class="button" href="https://www.wqed.org/wp-content/uploads/2024/02/The-Meanings-of-a-Word-by-Gloria-Naylor.pdf" target="_blank" rel="noopener">Open PDF &rarr;</a></div>
+            <div class="resource"><div><strong>Long Walk to Freedom</strong><small><span class="tag lend">Library</span>Nelson Mandela, autobiography. Borrow the digital copy to read your assigned section.</small></div><a class="button" href="https://archive.org/details/longwalktofreed000mand" target="_blank" rel="noopener">Open book &rarr;</a></div>
+            <div class="resource"><div><strong>&ldquo;Reforming the World&rdquo;</strong><small><span class="tag lend">Library</span>Gail Collins, a chapter in <em>America's Women</em>. Borrow the digital copy and find the chapter in the contents.</small></div><a class="button" href="https://archive.org/details/americaswomenfou00coll" target="_blank" rel="noopener">Open book &rarr;</a></div>
+          </div>
+          <p class="help">Links are to third-party sites and may change. Tell your teacher if one does not open.</p>
         </section>
 
         <section class="panel" id="checkpoint" aria-labelledby="check-h">
-          <p class="kicker">Section B</p>
-          <h2 id="check-h">Pre-Assessment Checkpoint</h2>
-          <p class="intro">Answer honestly. Wrong answers are fine here.</p>
+          <p class="kicker">Section C</p>
+          <h2 id="check-h">Checkpoint</h2>
+          <p class="intro">Answer on your own. Written answers should be two sentences or fewer.</p>
           <form id="check" novalidate>
             <div class="field"><label for="name">Name</label><input type="text" id="name" autocomplete="off"></div>
-            <div class="field"><fieldset><legend>1. What is the main reason the family keeps moving to explore the island?</legend>
+            <div class="field"><fieldset><legend>1. Which poem is built around the image of a caged bird and a free bird?</legend>
               <div class="radio-list">
-                <label class="radio-option"><input type="radio" name="q1" value="a"> To find a safer, better place to settle and more resources</label>
-                <label class="radio-option"><input type="radio" name="q1" value="b"> To race another family</label>
-                <label class="radio-option"><input type="radio" name="q1" value="c"> Because they are bored</label>
-                <label class="radio-option"><input type="radio" name="q1" value="d"> I'm not sure</label>
+                <label class="radio-option"><input type="radio" name="q1" value="a"> &ldquo;Caged Bird&rdquo;</label>
+                <label class="radio-option"><input type="radio" name="q1" value="b"> &ldquo;The Weary Blues&rdquo;</label>
+                <label class="radio-option"><input type="radio" name="q1" value="c"> &ldquo;Democracy&rdquo;</label>
               </div></fieldset></div>
-            <div class="field"><fieldset><legend>2. Setting means&hellip;</legend>
+            <div class="field"><fieldset><legend>2. In &ldquo;Democracy,&rdquo; Hughes compares freedom to&hellip;</legend>
               <div class="radio-list">
-                <label class="radio-option"><input type="radio" name="q2" value="a"> the problem in a story</label>
-                <label class="radio-option"><input type="radio" name="q2" value="b"> when and where a story takes place</label>
-                <label class="radio-option"><input type="radio" name="q2" value="c"> the lesson of a story</label>
-                <label class="radio-option"><input type="radio" name="q2" value="d"> I'm not sure</label>
+                <label class="radio-option"><input type="radio" name="q2" value="a"> a river</label>
+                <label class="radio-option"><input type="radio" name="q2" value="b"> a strong seed</label>
+                <label class="radio-option"><input type="radio" name="q2" value="c"> a mountain</label>
               </div></fieldset></div>
-            <div class="field"><fieldset><legend>3. If you do not know a word, which strategy helps first?</legend>
+            <div class="field"><fieldset><legend>3. Who wrote &ldquo;On Being Brought from Africa to America&rdquo;?</legend>
               <div class="radio-list">
-                <label class="radio-option"><input type="radio" name="q3" value="a"> Skip the whole page</label>
-                <label class="radio-option"><input type="radio" name="q3" value="b"> Use clues from the words and sentences nearby</label>
-                <label class="radio-option"><input type="radio" name="q3" value="c"> Guess without reading on</label>
-                <label class="radio-option"><input type="radio" name="q3" value="d"> I'm not sure</label>
+                <label class="radio-option"><input type="radio" name="q3" value="a"> Maya Angelou</label>
+                <label class="radio-option"><input type="radio" name="q3" value="b"> Langston Hughes</label>
+                <label class="radio-option"><input type="radio" name="q3" value="c"> Phillis Wheatley</label>
               </div></fieldset></div>
-            <div class="field"><label for="q4">4. Predict one thing that will happen in Chapter 8 and why you think so. (1&ndash;2 sentences)</label><textarea id="q4" maxlength="300"></textarea></div>
-            <div class="field"><label for="q5">5. How is the Robinsons' teamwork like or unlike your Day 1 bridge team? (1&ndash;2 sentences)</label><textarea id="q5" maxlength="300"></textarea></div>
-            <div class="field"><fieldset><legend>6. How confident are you at finding evidence in a text? (1 = not at all, 5 = very)</legend>
+            <div class="field"><label for="q4">4. Compare two of today's poems. How are the speakers' attitudes toward freedom alike or different? (1&ndash;2 sentences)</label><textarea id="q4" maxlength="400"></textarea></div>
+            <div class="field"><label for="q5">5. Copy a short quotation from one poem and name one technique (image, repetition, rhythm or tone) it uses. (1&ndash;2 sentences)</label><textarea id="q5" maxlength="400"></textarea></div>
+            <div class="field"><fieldset><legend>6. How confident are you comparing two texts? (1 = not at all, 5 = very)</legend>
               <div class="rating">
                 <label><input type="radio" name="q6" value="1"> 1</label><label><input type="radio" name="q6" value="2"> 2</label><label><input type="radio" name="q6" value="3"> 3</label><label><input type="radio" name="q6" value="4"> 4</label><label><input type="radio" name="q6" value="5"> 5</label>
               </div></fieldset></div>
-            <div class="actions"><button class="button" type="submit">Finish checkpoint</button><button class="button secondary" type="reset" id="clear">Clear</button><button class="button secondary" type="button" id="print">Print</button></div>
+            <div class="actions"><button class="button" type="submit">Check my answers</button><button class="button secondary" type="reset">Clear</button><button class="button secondary" type="button" id="print">Print</button></div>
             <p class="feedback" id="feedback" role="status"></p>
           </form>
           <p class="privacy">This page does not save or send answers. To collect class responses, copy these questions into an approved Google or Microsoft Form.</p>
@@ -273,20 +297,20 @@
       loadBrandImage('instructor-stamp', 'boehm-stamp.svg', 'Classroom stamp', 'stamp-svg');
 
       const prompts = [
-        'If you were stranded with your family, what is the first thing you would try to find or build, and why?',
-        'Describe a time a plan changed and you had to adapt. What did you do?',
-        'Which would help your group survive more: strength, creativity or patience? Defend your choice.',
-        'What makes a place feel safe? Describe the setting where you feel safest.',
-        'Which job would you take in a survival team, and what skill would you bring?',
-        'Describe the biggest tree or most amazing natural place you have seen. What made it memorable?',
-        'Why do people explore new places even when it is risky?',
-        'Think of our Day 1 bridge. What is one thing you would change about how your team worked?'
+        'What is a dream you have for your future that other people might not understand? What stands in its way?',
+        'Is it ever right to wait for change? When must people act now?',
+        'Describe a word or sound that means one thing to you and something different to someone else.',
+        'What does it mean to feel "caged"? What helps people feel free?',
+        'What does a home mean to you, beyond a building?',
+        'Describe a song or piece of music that expresses a feeling words cannot. What does it say?',
+        'Describe a time you spoke up, or wish you had, when something felt unfair.',
+        'Why do speeches and poems sometimes move people more than facts do?'
       ];
       const promptEl = document.getElementById('bell-prompt');
       let last = -1;
       function randomPrompt() {
         let n;
-        do { n = Math.floor(Math.random() * prompts.length); } while (n === last && prompts.length > 1);
+        do { n = Math.floor(Math.random() * prompts.length); } while (n === last);
         last = n;
         promptEl.textContent = prompts[n];
       }
@@ -294,12 +318,11 @@
       document.getElementById('bell-new').addEventListener('click', randomPrompt);
 
       const timerEl = document.getElementById('bell-timer');
-      const timerBtn = document.getElementById('bell-timer-btn');
       let timerId = null;
-      timerBtn.addEventListener('click', () => {
+      document.getElementById('bell-timer-btn').addEventListener('click', () => {
         clearInterval(timerId);
-        let left = 180;
-        timerEl.textContent = '3:00';
+        let left = 240;
+        timerEl.textContent = '4:00';
         timerId = setInterval(() => {
           left--;
           timerEl.textContent = Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0');
@@ -328,11 +351,12 @@
 
       const form = document.getElementById('check');
       const feedback = document.getElementById('feedback');
+      const key = { q1: 'a', q2: 'b', q3: 'c' };
+      const sentences = v => (v.match(/[.!?](\s|$)/g) || []).length;
       form.addEventListener('submit', event => {
         event.preventDefault();
-        const missing = ['q1', 'q2', 'q3', 'q6'].some(n => !form.querySelector('[name=' + n + ']:checked'));
-        const sentences = v => (v.match(/[.!?](\s|$)/g) || []).length;
-        if (missing || !form.q4.value.trim() || !form.q5.value.trim()) {
+        const unanswered = ['q1', 'q2', 'q3', 'q6'].some(n => !form.querySelector('[name=' + n + ']:checked'));
+        if (unanswered || !form.q4.value.trim() || !form.q5.value.trim()) {
           feedback.className = 'feedback error';
           feedback.textContent = 'Please answer every question.';
           return;
@@ -342,8 +366,9 @@
           feedback.textContent = 'Keep written answers to two sentences.';
           return;
         }
+        const right = Object.keys(key).filter(k => form.querySelector('[name=' + k + ']:checked').value === key[k]).length;
         feedback.className = 'feedback';
-        feedback.textContent = 'Checkpoint complete. Thank you! Show this screen to your teacher.';
+        feedback.textContent = 'Multiple choice: ' + right + ' / 3 correct. Your written answers are ready to show your teacher.';
       });
       form.addEventListener('reset', () => { feedback.textContent = ''; });
       document.getElementById('print').addEventListener('click', () => window.print());
